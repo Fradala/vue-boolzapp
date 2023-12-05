@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app{
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(150, 150, 150);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenitore{
+    width: 80%;
+    height: 95%;
+   
+   
+    display: flex;
+}
+
+.utenti{
+    width: 40%;
+    height: 100%;
+    
+    background-color: rgb(255, 252, 252);
+}
+
+.chat{
+    width: 60%;
+    height: 100%;
+}
+
+.mio-profilo{
+    
+    justify-content: space-between;
+    background-color: lightgray;
+    height: 50px;
+   
+}
+
+.testo-mio-profilo{
+    margin: 15px 5px;
+}
+
+
+.foto{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.icone .fa-solid{
+    margin: 15px 5px;
+    color: gray;
+}
+
+.notifiche{
+    height: 50px;
+    background-color: rgb(132, 239, 239);
+}
+
+.campana{
+    font-size: 20px;
+    margin: 15px 12px;
+}
+
+.testo-notifiche{
+    margin: 14px 5px;
+    
+}
+.testo-notifica{
+    font-size: 15px;
+}
+.sottolineato{
+    font-size: 10px;
+    color: rgb(172, 172, 172);
+}
+.contenitore-ricerca{
+    width: 100%;
+    
+}
+
+.contenitore-text-area{
+    width: 80%;
+    
+    height: 40px;
+}
+.icona-lente{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 5px 0px 5px 10px;
+    
+    color: gray;
+}
+
+.area-testo{
+    width: 95%;
+    height: 30px;
+    margin: 5px 10px 5px 0px;
+    
+    border: none;
+
+}
+.utente{
+    margin-left: 5px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+.utente:hover{
+    background-color: rgb(213, 207, 207);
+}
+
+.ora{
+    font-size: 10px;
+    margin-right: 5px;
+}
+.nome-amico{
+    margin: 10px 0px 5px 5px;
+}
+
+.chat-con-amico{
+    width: 100%;
+    background-color: lightgray;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.testo-chat-amico{
+    margin: 10px 0px 5px 5px;
+}
+
+.accesso-chat-amico{
+    font-size: 10px;
+}
+
+.icone-chat .fa-solid{
+    margin-right: 10px;
+    color: gray;
+}
+
+.chat-content{
+    width: 100%;
+    height: calc(100% - 100px);
+    background-image: url(../\ img\ 11.39.57/mine.jpg);
+}
+
+.text-area-amico{
+    width: 100%;
+    height: 50px;
+    background-color: lightgray;
+    
+}
+.tastiera{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emoji{
+    width: 20%;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 22px;
+    color: gray;
+}
+.area-testo-amico{
+    height: 30px;
+    margin: 10px 10px 5px 0px;
+    width: 290px;
+    border: none;
+
+}
+.microfono{
+    width: 20%;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 22px;
+    color: gray;
+}
+
+.sent{
+    background-color: rgb(44, 228, 44);
+    
+}
+
+.received{
+    background-color: white;
+}

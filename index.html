@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boolzapp</title>
+
+     <!-- fONTAWESOME -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div id="app">
+        <main class="wrapper">
+            <section class="contenitore">
+                <section class="utenti">
+                    <div class="mio-profilo flex">
+                        <div class="foto-profilo flex">
+                            <img class="foto" src="./ img 11.39.57/avatar_io.jpg" alt="foto utente">
+                            <p class="testo-mio-profilo">
+                                Sofia
+                            </p>
+                        </div>
+                        <div class="icone flex">
+                            <i class="fa-solid fa-circle-notch"></i>
+                            <i class="fa-solid fa-message"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="notifiche flex">
+                        <div class="campana">
+                            <i class="fa-regular fa-bell-slash"></i>
+                        </div>
+                        <div class="testo-notifiche">
+                            <p class="testo-notifica">
+                                Ricevi notifiche dei messaggi
+                            </p>
+                            <p class="sottolineato">
+                                <u>Attiva notifiche desktop</u>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contenitore-ricerca flex">
+                        <div class="icona-lente">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="contenitore-text-area">
+                            <input class="area-testo" type="text" 
+                            placeholder="Cerca o inizia una nuova chat"  
+                            name="ricercaNome" id="ricercaNome">
+                        </div>
+                    </div>
+                    <div v-for="(amici, index) in contacts">
+                        <div class="utente flex">
+                            <div class="flex">
+                                <img class="foto" :src="amici.avatar" alt="">
+                                <p class="nome-amico"> 
+                                    {{ amici.name }}
+                                    <!--{{ amici.messages[message] }}-->
+                                </p>
+                            </div>
+                            <div class="ora">
+                                <p>
+                                    12:00
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+    
+                    
+                </section>
+                <section class="chat">
+                    <div class="chat-con-amico flex">
+                        <div class="flex">
+                            <img class="foto" src="./ img 11.39.57/avatar_2.jpg" alt="amico">
+                            <p class="testo-chat-amico">
+                                {{ contacts[2].name }} <br>
+                                <span class="accesso-chat-amico">Ultimo accesso oggi alle 12:00</span>
+                            </p>
+                        </div>
+                        <div class="icone-chat flex">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-paperclip"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                    <div class="chat-content">
+                        <div class="sent">
+                            <p>
+                                
+                            </p>
+                        </div>
+                        <div class="received"></div>
+                    </div>
+                    <div class="text-area-amico">
+                        <div class="tastiera flex">
+                            <div class="emoji">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </div>
+                            <div>
+                                <input class="area-testo-amico" type="text" 
+                                placeholder="  Scrivi un messaggio"  
+                                name="messaggioPerAmico" id="messaggioPerAmico">
+                            </div>
+                            <div class="microfono">
+                                <i class="fa-solid fa-microphone"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </section>
+    
+    
+            </section>
+    
+        </main>
+    </div>
+   
+
+
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
