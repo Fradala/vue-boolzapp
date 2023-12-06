@@ -55,10 +55,16 @@
                         <div class="utente flex">
                             <div class="flex">
                                 <img class="foto" :src="amici.avatar" alt="">
-                                <p class="nome-amico"> 
-                                    {{ amici.name }}
-                                    <!--{{ amici.messages[message] }}-->
-                                </p>
+                                <div>
+                                    <p class="nome-amico"> 
+                                        {{ amici.name }}
+                                        
+                                    </p>
+                                   <p class="ultimo-messaggio-amico">
+                                        Ultimo messaggio inviato
+                                   </p>
+                                </div>
+                                
                             </div>
                             <div class="ora">
                                 <p>
@@ -103,21 +109,21 @@
                             </article>
                         </div>
                     </div>
-                    <div class="text-area-amico">
-                        <div class="tastiera flex">
-                            <div class="emoji">
-                                <i class="fa-regular fa-face-smile"></i>
-                            </div>
-                            <div>
-                                <input class="area-testo-amico" type="text" 
-                                placeholder="  Scrivi un messaggio"  
-                                name="messaggioPerAmico" id="messaggioPerAmico">
-                            </div>
-                            <div class="microfono">
-                                <i class="fa-solid fa-microphone"></i>
-                            </div>
-
+                    <div class="text-area-amico flex">
+                        
+                        <div class="emoji">
+                            <i class="fa-regular fa-face-smile"></i>
                         </div>
+                        <div class="tastiera">
+                            <input class="area-testo-amico" type="text" 
+                            placeholder="  Scrivi un messaggio"  
+                            name="messaggioPerAmico" id="messaggioPerAmico">
+                            </div>
+                        <div class="microfono">
+                            <i class="fa-solid fa-microphone"></i>
+                        </div>
+
+                        
                     </div>
                     
                 </section>
