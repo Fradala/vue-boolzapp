@@ -221,22 +221,24 @@
     color: gray;
 }
 
-div.messages > article.message{
-    padding: 1rem 1.25rem;
-    border-radius: 1rem;
-    margin: 0 2rem .8rem 2rem;
-    background-color: #8edafc;
-    clear: both;
-}
 
-div.messages > article.message.received{
+
+.received{
     float: left;
     background-color: #ffffff;
     margin-right: 5rem;
+    clear: both;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem;
+    margin: 0 2rem .8rem 2rem;
 }
 
-div.messages > article.message.sent{
+.sent{
     float: right;
     background-color: #d5f9ba;
     margin-left: 5rem;
+    clear: both;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem;
+    margin: 0 2rem .8rem 2rem;
 }

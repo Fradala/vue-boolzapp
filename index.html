@@ -96,7 +96,7 @@
                     <div class="chat-content">
                         <div class="messages clearfix">
                             <article v-for="(messaggio, index) in contacts[0].messages">
-                                <p :class="messaggio.status  === received ? 'received' : 'sent'">
+                                <p :class="messaggio.status  === 'received' ? 'received' : 'sent'">
                                     {{ messaggio.message}}
                                 </p>
                                 
