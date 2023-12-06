@@ -95,18 +95,13 @@
 
                     <div class="chat-content">
                         <div class="messages clearfix">
-                            <article v-for="(messaggio, index) in contacts[0].messages[1]" class="message received">
+                            <article v-for="(messaggio, index) in contacts[0].messages">
+                                <p :class="messaggio.status  === received ? 'received' : 'sent'">
+                                    {{ messaggio.message}}
+                                </p>
                                 
                             </article>
-                            <article class="message sent">
-                                {{  }}
-                            </article>
-                            <article class="message received">
-                                
-                            </article>
-                            <article class="message sent">
-                                
-                            </article>
+                           
                         </div>
                     </div>
                 
@@ -134,13 +129,7 @@
     
         </main>
 
-        <li v-for=" element in macchine ">
-            <p>
-                {{ element.macchina }}
-            </p>
-            
-
-        </li>
+        
     </div>
    
 
