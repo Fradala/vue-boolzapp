@@ -186,9 +186,20 @@ createApp({
             macchine: [
                 {
                     macchina: 'blu',
-                    macchina: 'gialla',
-                    macchina: 'verde',
-                }
+                    auto: 'gialla',
+                },
+                {
+                    macchina: 'blu',
+                    auto: 'gialla',
+                },
+                {
+                    macchina: 'blu',
+                    auto: 'gialla',
+                },
+                {
+                    macchina: 'blu',
+                    auto: 'gialla',
+                },
             ]
             
         }
