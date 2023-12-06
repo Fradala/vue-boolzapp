@@ -82,7 +82,7 @@
                         <div class="flex">
                             <img class="foto" src="./ img 11.39.57/avatar_2.jpg" alt="amico">
                             <p class="testo-chat-amico">
-                                {{ contacts[2].name }} <br>
+                                {{ contacts[1].name }} <br>
                                 <span class="accesso-chat-amico">Ultimo accesso oggi alle 12:00</span>
                             </p>
                         </div>
@@ -95,17 +95,17 @@
 
                     <div class="chat-content">
                         <div class="messages clearfix">
-                            <article class="message received">
-                                <!--{{ contacts.messages[1].message }}-->
+                            <article v-for="(messaggio, index) in contacts[0].messages[1]" class="message received">
+                                
                             </article>
                             <article class="message sent">
-                                ciaoaoaai
+                                {{  }}
                             </article>
                             <article class="message received">
-                                jxixihi
+                                
                             </article>
                             <article class="message sent">
-                                uuuhu
+                                
                             </article>
                         </div>
                     </div>
@@ -133,6 +133,14 @@
             </section>
     
         </main>
+
+        <li v-for=" macchina in macchine ">
+            <p>
+                {{ macchina.macchina }}
+            </p>
+            
+
+        </li>
     </div>
    
 

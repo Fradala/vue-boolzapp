@@ -1,5 +1,5 @@
 
-const { createApp } = Vue
+/*const { createApp } = Vue
 
 createApp({
     data() {
@@ -175,7 +175,25 @@ createApp({
         
         
     }
-}).mount('#app')
+}).mount('#app')*/
+
+const { createApp } = Vue
+
+
+createApp({
+    data() {
+        return {
+            macchine: [
+                {
+                    macchina: 'blu',
+                    macchina: 'gialla',
+                    macchina: 'verde',
+                }
+            ]
+            
+        }
+    }
+})
 
 
 
