@@ -180,12 +180,16 @@ createApp({
 
         nuovoMessaggio(newElement){
             console.log(newElement)
-            this.contacts.messages[0].push({
+            this.contacts[this.activeContact].messages.push({
                 message: newElement,
                 status: 'sent'
             })
-            
+            this.newMessage = '';
         },
+
+        rispostaMessaggio(nuovoMexAmico){
+            
+        }
         
     },
 }).mount('#app')
