@@ -51,13 +51,13 @@
                             name="ricercaNome" id="ricercaNome">
                         </div>
                     </div>
-                    <div v-for="(amici, index) in contacts">
+                    <div v-for="(contact, contactIndex) in contacts" @click="selectContact(contactIndex)">
                         <div class="utente flex">
                             <div class="flex">
-                                <img class="foto" :src="amici.avatar" alt="">
+                                <img class="foto" :src="contact.avatar" alt="">
                                 <div>
                                     <p class="nome-amico"> 
-                                        {{ amici.name }}
+                                        {{ contact.name }}
                                         
                                     </p>
                                    <p class="ultimo-messaggio-amico">
@@ -80,9 +80,9 @@
                 <section class="chat">
                     <div class="chat-con-amico flex">
                         <div class="flex">
-                            <img class="foto" src="./ img 11.39.57/avatar_2.jpg" alt="amico">
+                            <img class="foto" :src="contacts[activeContact].avatar" alt="amico">
                             <p class="testo-chat-amico">
-                                {{ contacts[1].name }} <br>
+                                {{ contacts[activeContact].name }} <br>
                                 <span class="accesso-chat-amico">Ultimo accesso oggi alle 12:00</span>
                             </p>
                         </div>
@@ -95,10 +95,10 @@
 
                     <div class="chat-content">
                         <div class="messages clearfix">
-                            <article v-for="(messaggio, index) in contacts[0].messages">
-                                <p :class="messaggio.status  === 'received' ? 'received' : 'sent'">
-                                    {{ messaggio.message}}
-                                </p>
+                            <article v-for="messaggio in contacts[activeContact].messages" :class="messaggio.status  === 'received' ? 'received' : 'sent'">
+                                    
+                                {{ messaggio.message}}
+                               
                                 
                             </article>
                            
