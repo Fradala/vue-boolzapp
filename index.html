@@ -48,10 +48,10 @@
                         <div class="contenitore-text-area">
                             <input class="area-testo" type="text" 
                             placeholder="Cerca o inizia una nuova chat"  
-                            name="ricercaNome" id="ricercaNome" v-model="ricercaContatto(contatto)" @keyup="">
+                            name="ricercaNome" id="ricercaNome" v-model="ricercaContatti">
                         </div>
                     </div>
-                    <div v-for="(contact, contactIndex) in contacts" @click="selectContact(contactIndex)" v-show="">
+                    <div v-for="(contact, contactIndex) in contacts" @click="selectContact(contactIndex)" v-show="verificaContatto(contact.name)" >
                         <div class="utente flex">
                             <div class="flex">
                                 <img class="foto" :src="contact.avatar" alt="">

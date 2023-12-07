@@ -6,7 +6,7 @@ createApp({
         return {
             activeContact: 0,
             newMessage: '',
-            mostraContatto: true,
+            ricercaContatti: '',
             contacts: [
                 {
                     name: 'Michele',
@@ -198,8 +198,8 @@ createApp({
             },1000)
         },
 
-        ricercaContatto(contatto){
-            if( this.contacts[this.activeContact].name include una lettera/parola) {
+        verificaContatto(nomeContatto){
+            if( nomeContatto.includes(this.ricercaContatti) ) {
                 return true
             } else {
                 return false
