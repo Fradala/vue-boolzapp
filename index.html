@@ -113,8 +113,10 @@
                         <div class="tastiera">
                             <input class="area-testo-amico" type="text" 
                             placeholder="  Scrivi un messaggio"  
-                            name="messaggioPerAmico" id="messaggioPerAmico" v-model="newMessage" @keyup.enter="addNewMessage(newMessage)">
-                            </div>
+                            name="messaggioPerAmico" id="messaggioPerAmico"
+                            @keyup.enter="nuovoMessaggio(newMessage)"
+                            v-model="newMessage">
+                        </div>
                         <div class="microfono">
                             <i class="fa-solid fa-microphone"></i>
                         </div>
