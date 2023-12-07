@@ -6,6 +6,7 @@ createApp({
         return {
             activeContact: 0,
             newMessage: '',
+            mostraContatto: true,
             contacts: [
                 {
                     name: 'Michele',
@@ -180,16 +181,30 @@ createApp({
 
         nuovoMessaggio(newElement){
             console.log(newElement)
+            
+           
+        
+
             this.contacts[this.activeContact].messages.push({
                 message: newElement,
                 status: 'sent'
             })
             this.newMessage = '';
+            setTimeout( () => {
+                this.contacts[this.activeContact].messages.push({
+                    message: 'okok',
+                    status: 'received'
+                })
+            },1000)
         },
 
-        rispostaMessaggio(nuovoMexAmico){
-            
-        }
+        ricercaContatto(contatto){
+            if( this.contacts.name )
+        },
+
+
+
+       
         
     },
 }).mount('#app')

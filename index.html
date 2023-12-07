@@ -48,10 +48,10 @@
                         <div class="contenitore-text-area">
                             <input class="area-testo" type="text" 
                             placeholder="Cerca o inizia una nuova chat"  
-                            name="ricercaNome" id="ricercaNome">
+                            name="ricercaNome" id="ricercaNome" v-model="" @keyup="">
                         </div>
                     </div>
-                    <div v-for="(contact, contactIndex) in contacts" @click="selectContact(contactIndex)">
+                    <div v-for="(contact, contactIndex) in contacts" @click="selectContact(contactIndex)" v-show="">
                         <div class="utente flex">
                             <div class="flex">
                                 <img class="foto" :src="contact.avatar" alt="">
@@ -115,7 +115,7 @@
                             placeholder="  Scrivi un messaggio"  
                             name="messaggioPerAmico" id="messaggioPerAmico"
                             @keyup.enter="nuovoMessaggio(newMessage)"
-                            v-model="newMessage">
+                            v-model="newMessage" >
                         </div>
                         <div class="microfono">
                             <i class="fa-solid fa-microphone"></i>
