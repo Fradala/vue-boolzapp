@@ -48,7 +48,7 @@
                         <div class="contenitore-text-area">
                             <input class="area-testo" type="text" 
                             placeholder="Cerca o inizia una nuova chat"  
-                            name="ricercaNome" id="ricercaNome" v-model="" @keyup="">
+                            name="ricercaNome" id="ricercaNome" v-model="ricercaContatto(contatto)" @keyup="">
                         </div>
                     </div>
                     <div v-for="(contact, contactIndex) in contacts" @click="selectContact(contactIndex)" v-show="">

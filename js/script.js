@@ -199,7 +199,11 @@ createApp({
         },
 
         ricercaContatto(contatto){
-            if( this.contacts.name )
+            if( this.contacts[this.activeContact].name include una lettera/parola) {
+                return true
+            } else {
+                return false
+            }
         },
 
 
