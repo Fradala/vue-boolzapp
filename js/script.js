@@ -192,7 +192,7 @@ createApp({
             this.newMessage = '';
             setTimeout( () => {
                 this.contacts[this.activeContact].messages.push({
-                    message: 'okok',
+                    message: 'ok allora sei forte',
                     status: 'received'
                 })
             },1000)
