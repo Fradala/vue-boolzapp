@@ -199,7 +199,7 @@ createApp({
         },
 
         verificaContatto(nomeContatto){
-            if( nomeContatto.includes(this.ricercaContatti) ) {
+            if( nomeContatto.toLowerCase().includes(this.ricercaContatti) ) {
                 return true
             } else {
                 return false
