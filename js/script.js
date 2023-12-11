@@ -199,12 +199,13 @@ createApp({
         },
 
         verificaContatto(nomeContatto){
-            if( nomeContatto.toLowerCase().toUpperCase().includes(this.ricercaContatti) ) {
+            if( nomeContatto.toLowerCase().includes(this.ricercaContatti) ) {
                 return true
             } else {
                 return false
             }
         },
+       
 
 
 
